@@ -146,7 +146,7 @@ export default class Embed extends Component {
     return (
       <ElementType {...rest} className={classes} onClick={this.handleClick}>
         {Icon.create(iconShorthand, { autoGenerateKey: false })}
-        {placeholder && <img className='placeholder' src={placeholder} />}
+        {placeholder && <img className='placeholder' src={placeholder} alt="embed placeholder image" />}
         {this.renderEmbed()}
       </ElementType>
     )
